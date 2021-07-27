@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=David+Libre&family=Quicksand&display=swap');
 
 html {
     scroll-behavior: smooth;
@@ -14,7 +15,7 @@ body {
 header {
     .top-navigation {
         height: 35px;
-        background-color: #2590f5;
+        background-color: black;
 
         .top-navigation-content {
             float: right;
@@ -25,13 +26,13 @@ header {
             a {
                 padding: 9px;
                 text-decoration: none;
-                font-size: 0.83rem;
+                font-size: 0.85rem;
                 font-family: 'poppins', sans-serif;
                 color: #fff;
             }
 
             a:hover {
-                color: #004e97;
+                color: #ff4040;
                 transition: 0.3s ease-in-out;
             }
         }
@@ -39,43 +40,99 @@ header {
 
     .main-navigation-container {
         display: block;
-        height: 75px;
+        height: 55px;
         width: 100%;
         background-color: #fff;
 
         .navigation-content {
-
+            max-width: 1200px;
+            margin: 0 auto;
             .navigation-left {
                 float: left;
-                margin-top: 20px;
+                margin-top: 18px;
 
                 a {
-                    padding: 9px;
-                    text-decoration: none;
-                    font-size: 1.3rem;
-                    font-family: 'poppins', sans-serif;
-                    color: #363535;
+                    padding: 8px;
+
+                    img {
+                        width: 100px;
+                    }
                 }
             }
 
             .navigation-right {
                 float: right;
-                margin-top: 25px;
+                margin-top: 11px;
 
                 a {
-                    padding: 9px;
+                    padding: 8px;
                     text-decoration: none;
-                    font-size: 1.05rem;
-                    font-family: 'ubuntu', sans-serif;
+                    font-size: 0.97rem;
+                    font-family: 'Quicksand', sans-serif;
                     color: #a8a8a8be;
                 }
 
                 a:hover {
-                    color: #2590f5;
+                    color: #363535;
                     transition: 0.4s ease-in-out;
+                }
+
+                .desktop {
+                    display: none;
+                }
+
+                .mobile {
+                    font-size: 1.7rem;
+                    color: #363535;
                 }
             }
 
+        }
+    }
+}
+
+main {
+    width: 100%;
+}
+
+@media (min-width: 500px) {
+    header {
+        .main-navigation-container {
+            height: 75px;
+
+            .navigation-content {
+
+                .navigation-left {
+                    margin-top: 15px;
+
+                    a {
+                        padding: 9px;
+                        font-size: 2rem;
+
+                        img {
+                            width: 130px;
+                        }
+                    }
+                }
+
+                .navigation-right {
+                    margin-top: 25px;
+
+                    a {
+                        padding: 9px;
+                        font-size: 1.05rem;
+                    }
+
+                    .desktop {
+                        display: inline;
+                    }
+
+                    .mobile {
+                        display: none;
+                    }
+                }
+
+            }
         }
     }
 }

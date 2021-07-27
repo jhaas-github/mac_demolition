@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Ubuntu:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=David+Libre&family=Quicksand&display=swap");
 html {
   scroll-behavior: smooth;
 }
@@ -13,7 +14,7 @@ body {
 
 header .top-navigation {
   height: 35px;
-  background-color: #2590f5;
+  background-color: black;
 }
 
 header .top-navigation .top-navigation-content {
@@ -25,53 +26,100 @@ header .top-navigation .top-navigation-content {
 header .top-navigation .top-navigation-content a {
   padding: 9px;
   text-decoration: none;
-  font-size: 0.83rem;
+  font-size: 0.85rem;
   font-family: 'poppins', sans-serif;
   color: #fff;
 }
 
 header .top-navigation .top-navigation-content a:hover {
-  color: #004e97;
+  color: #ff4040;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
 
 header .main-navigation-container {
   display: block;
-  height: 75px;
+  height: 55px;
   width: 100%;
   background-color: #fff;
 }
 
+header .main-navigation-container .navigation-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 header .main-navigation-container .navigation-content .navigation-left {
   float: left;
-  margin-top: 20px;
+  margin-top: 18px;
 }
 
 header .main-navigation-container .navigation-content .navigation-left a {
-  padding: 9px;
-  text-decoration: none;
-  font-size: 1.3rem;
-  font-family: 'poppins', sans-serif;
-  color: #363535;
+  padding: 8px;
+}
+
+header .main-navigation-container .navigation-content .navigation-left a img {
+  width: 100px;
 }
 
 header .main-navigation-container .navigation-content .navigation-right {
   float: right;
-  margin-top: 25px;
+  margin-top: 11px;
 }
 
 header .main-navigation-container .navigation-content .navigation-right a {
-  padding: 9px;
+  padding: 8px;
   text-decoration: none;
-  font-size: 1.05rem;
-  font-family: 'ubuntu', sans-serif;
+  font-size: 0.97rem;
+  font-family: 'Quicksand', sans-serif;
   color: #a8a8a8be;
 }
 
 header .main-navigation-container .navigation-content .navigation-right a:hover {
-  color: #2590f5;
+  color: #363535;
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
+}
+
+header .main-navigation-container .navigation-content .navigation-right .desktop {
+  display: none;
+}
+
+header .main-navigation-container .navigation-content .navigation-right .mobile {
+  font-size: 1.7rem;
+  color: #363535;
+}
+
+main {
+  width: 100%;
+}
+
+@media (min-width: 500px) {
+  header .main-navigation-container {
+    height: 75px;
+  }
+  header .main-navigation-container .navigation-content .navigation-left {
+    margin-top: 15px;
+  }
+  header .main-navigation-container .navigation-content .navigation-left a {
+    padding: 9px;
+    font-size: 2rem;
+  }
+  header .main-navigation-container .navigation-content .navigation-left a img {
+    width: 130px;
+  }
+  header .main-navigation-container .navigation-content .navigation-right {
+    margin-top: 25px;
+  }
+  header .main-navigation-container .navigation-content .navigation-right a {
+    padding: 9px;
+    font-size: 1.05rem;
+  }
+  header .main-navigation-container .navigation-content .navigation-right .desktop {
+    display: inline;
+  }
+  header .main-navigation-container .navigation-content .navigation-right .mobile {
+    display: none;
+  }
 }
 /*# sourceMappingURL=styling.css.map */
