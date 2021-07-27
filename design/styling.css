@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Ubuntu:wght@300&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #f8f8f8;
+}
+
+header .top-navigation {
+  height: 35px;
+  background-color: #2590f5;
+}
+
+header .top-navigation .top-navigation-content {
+  float: right;
+  display: inline;
+  margin-top: 7px;
+}
+
+header .top-navigation .top-navigation-content a {
+  padding: 9px;
+  text-decoration: none;
+  font-size: 0.83rem;
+  font-family: 'poppins', sans-serif;
+  color: #fff;
+}
+
+header .top-navigation .top-navigation-content a:hover {
+  color: #004e97;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+header .main-navigation-container {
+  display: block;
+  height: 75px;
+  width: 100%;
+  background-color: #fff;
+}
+
+header .main-navigation-container .navigation-content .navigation-left {
+  float: left;
+  margin-top: 20px;
+}
+
+header .main-navigation-container .navigation-content .navigation-left a {
+  padding: 9px;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-family: 'poppins', sans-serif;
+  color: #363535;
+}
+
+header .main-navigation-container .navigation-content .navigation-right {
+  float: right;
+  margin-top: 25px;
+}
+
+header .main-navigation-container .navigation-content .navigation-right a {
+  padding: 9px;
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-family: 'ubuntu', sans-serif;
+  color: #a8a8a8be;
+}
+
+header .main-navigation-container .navigation-content .navigation-right a:hover {
+  color: #2590f5;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+/*# sourceMappingURL=styling.css.map */
